@@ -9,12 +9,12 @@
     }
 
     .btn{
-        @apply inline-block text-white font-bold text-lg text-center bg-cyan rounded-full py-3 px-9 hover:bg-cyan/50 transition-colors duration-300;
+        @apply inline-block text-white font-bold text-lg text-center bg-cyan rounded-full py-3 px-9 hover:bg-light-cyan transition-colors duration-300;
     }
 }
 
 @layer components {
     .container{
-        @apply mx-auto px-6 ;
+        @apply mx-auto px-6 max-w-[1156px] ;
     }
 }
