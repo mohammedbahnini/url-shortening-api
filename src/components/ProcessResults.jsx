@@ -4,7 +4,7 @@ import ProcessResultItem from './ProcessResultItem'
 
 function ProcessResults() {
     return (
-        <div className='flex flex-col gap-y-6 mt-6'>
+        <div className='flex flex-col gap-y-6 mt-6 lg:gap-y-4 '>
             <ProcessResultItem />
             <ProcessResultItem />
             <ProcessResultItem />

@@ -25,7 +25,7 @@ function FooterSocialMedia() {
                 {
                     links.map( (item , index) => (
                         <li key={index}>
-                            <a href={item.href} className='text-white text-2xl'>{item.icon}</a>
+                            <a href={item.href} className='text-white text-2xl hover:text-cyan'>{item.icon}</a>
                         </li>
                     ))
                 }

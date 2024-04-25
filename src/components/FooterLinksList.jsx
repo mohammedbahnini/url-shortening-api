@@ -8,7 +8,7 @@ function FooterLinksList() {
         }
     ]
     return (
-        <div className='flex flex-col gap-y-10 '> 
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:flex-1 lg:pl-[261px] lg:gap-x-20 '> 
 
 
             <FooterLinksGroup />

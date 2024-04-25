@@ -8,12 +8,11 @@ import ProcessResults from './ProcessResults'
 function Main() {
     return (
         <main>
-            <section className=' relative after:absolute after:left-0 after:right-0 after:top-20 after:bottom-0 after:bg-gray after:-z-[3] ' >
+            <section className=' relative after:absolute after:left-0 after:right-0 after:top-20 after:bottom-0 after:bg-gray after:-z-[3] lg:after:top-[86px] ' >
                 <div className="container">
                     <ProcessLink />
                     <ProcessResults />
                     <CardList />
-
                 </div>
                 
             </section>

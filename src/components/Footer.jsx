@@ -4,9 +4,9 @@ import FooterSocialMedia from './FooterSocialMedia'
 
 function Footer() {
     return (
-        <footer className='bg-very-dark-blue py-16 ' >
+        <footer className='bg-very-dark-blue py-16 lg:py-[72px] ' >
             <div className="container">
-                <div className="flex flex-col items-center gap-y-12 ">
+                <div className="flex flex-col items-center gap-y-12 lg:flex-row lg:items-start ">
 
                     <a href="#">
                         <img src="/public/images/logo.svg" alt="" className='brightness-[100] '  />

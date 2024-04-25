@@ -17,7 +17,7 @@ function FooterLinksGroup() {
     ];
 
     return (
-        <div className='text-center   '>
+        <div className='text-center  lg:text-left  '>
             <h3 className='text-white font-bold text-base mb-[22px] '>Features</h3>
             <ul className='flex flex-col gap-y-[10px] text-[15px] '>
                {
