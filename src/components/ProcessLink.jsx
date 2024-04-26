@@ -1,13 +1,21 @@
 import classNames from 'classnames'
 import React, { useState } from 'react'
+import getShortUrl from '../api/shorten-link';
+import { useShortenUrl } from 'react-shorten-url';
+
 
 function ProcessLink() {
     const [hasError, setHasError] = useState(false);
 
-    const handleSubmiit = (e) => {
+    const  handleSubmiit = async (e) => {
         e.preventDefault();
         setHasError(prev => !prev);
-    }
+
+        const data = await getShortUrl("https://www.frontendmentor.io/challenges?hideCompleted=true&sort=difficulty%7Cdesc");
+        console.log(data.data);
+    }   
+
+
 
     return (
         <div className='bg-very-dark-violet  p-6 rounded-[10px] relative -top-0 bg-[url("/public/images/bg-shorten-mobile.svg")] bg-no-repeat bg-right-top lg:py-14 lg:px-16 lg:bg-[url("/public/images/bg-shorten-desktop.svg")] '>
