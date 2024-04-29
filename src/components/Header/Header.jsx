@@ -31,7 +31,7 @@ function Header() {
             <div className="container">
                 <nav className='flex items-center justify-between pt-10  '>
                     <a href="#" className=''>
-                        <img src='/public/images/logo.svg' alt='logo' />
+                        <img src='/images/logo.svg' alt='logo' />
                     </a>
                     <div className={classNames(`absolute left-6 right-6 top-24 z-50 bg-dark-violet rounded-[10px] px-6 py-10 origin-top-right transition-[colors_transform] duration-100 ease-in
                     lg:static lg:scale-100 lg:opacity-100 lg:flex-1 lg:flex lg:flex-   lg:bg-transparent lg:py-0 lg:px-0   ` , {
