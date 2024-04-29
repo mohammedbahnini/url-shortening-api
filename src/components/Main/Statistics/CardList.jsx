@@ -28,7 +28,7 @@ function CardList() {
 
             <div className='mt-12 flex flex-col gap-y-12 relative after:absolute after:left-[50%] after:w-2 after:bg-cyan after:h-full after:-translate-x-1 lg:flex-row lg:gap-x-8 lg:after:w-10/12 lg:after:h-2 lg:after:translate-x-[-50%] lg:after:top-[50%] lg:after:translate-y-[50%] '>
                 {
-                    cadrs.map( (card , index) => <Card icon={card.icon} title={card.title} text={card.text} key={index} />)
+                    cadrs.map( (card , index) => <Card icon={card.icon} title={card.title} text={card.text} key={index} index={index} />)
                 }
             </div>
         </div>

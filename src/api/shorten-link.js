@@ -5,9 +5,7 @@ const api_url = "https://api.tinyurl.com/create?api_token=FTY9BFVWAvYSs78dubi71G
 
 export default async function getShortUrl(url) {
   try {
-    const response = await axios.post(api_url  , {
-      url
-    });
+    const response = await axios.post(api_url  , { url });
 
     //console.log(response.data.data.tiny_url);
     return { 
@@ -17,10 +15,11 @@ export default async function getShortUrl(url) {
     };
   } 
   catch (error) {
+    console.log(error);
     return { 
       status : false , 
       error , 
-      message : 'An error occured while shortening the link'
+      message : 'An error occured while processing the link'
     }
   }
 }

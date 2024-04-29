@@ -35,6 +35,7 @@ function ProcessLink({ setShortenLinks }) {
 
 
             const data = await getShortUrl(inputRef.current.value);
+            console.log(data);
             setIsLoading(false);
             setErrorMessage('')
     
@@ -61,7 +62,7 @@ function ProcessLink({ setShortenLinks }) {
 
 
     return (
-        <div className='bg-very-dark-violet  p-6 rounded-[10px] relative -top-0 bg-[url("/public/images/bg-shorten-mobile.svg")] bg-no-repeat bg-cover bg-right-top lg:py-14 lg:px-16 lg:bg-[url("/public/images/bg-shorten-desktop.svg")] '>
+        <div className='bg-very-dark-violet  p-6 rounded-[10px] relative -top-0 bg-[url("/images/bg-shorten-mobile.svg")] bg-no-repeat lg:bg-cover bg-right-top lg:py-14 lg:px-16 lg:bg-[url("/images/bg-shorten-desktop.svg")] '>
 
             <form action="#" className='flex flex-col lg:flex-row lg:items-center lg:gap-x-6 '>
                 <div className='lg:flex-1'>
@@ -70,11 +71,12 @@ function ProcessLink({ setShortenLinks }) {
                         'border-none  ': !hasError
                     })}
                     ref={inputRef} 
+                    
                     />
                     {
                         hasError && (
                             <span className='italic text-xs block leading-normal text-red-400 mt-1 lg:text-base lg:mt-2 lg:absolute '>
-                                Please add a link
+                                {errorMessage}
                             </span>
                         )
                     }

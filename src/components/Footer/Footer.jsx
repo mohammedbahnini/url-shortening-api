@@ -9,7 +9,7 @@ function Footer() {
                 <div className="flex flex-col items-center gap-y-12 lg:flex-row lg:items-start ">
 
                     <a href="#">
-                        <img src="/public/images/logo.svg" alt="" className='brightness-[100] '  />
+                        <img src="/images/logo.svg" alt="" className='brightness-[100] '  />
                     </a>
 
                     <FooterLinksList />
