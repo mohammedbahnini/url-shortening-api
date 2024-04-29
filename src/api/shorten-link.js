@@ -1,41 +1,26 @@
-// const api_url = "https://tinyurl.com/api-create.php";
-
-// export async function getShortUrl(url: string) {
-//   try {
-//     const response = await fetch(`${api_url}?url=${url}`);
-
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! status: ${response.status}`);
-//     }
-
-//     const data = await response.text();
-//     return { status: true, data };
-//   } catch (error) {
-//     if (error instanceof Error) {
-//       const data = `Fetch error: ${error.message}`;
-//       return { status: false, data };
-//     }
-//   }
-// }
+import axios from "axios";
 
 
-const api_url = "https://tinyurl.com/api-create.php";
+const api_url = "https://api.tinyurl.com/create?api_token=FTY9BFVWAvYSs78dubi71GzwuqtwK6H0Y3gDfp2v1oOXcC143IE6YH1oCC4a";
 
 export default async function getShortUrl(url) {
   try {
-    const response = await fetch(`${api_url}?url=https://www.google.com`);
+    const response = await axios.post(api_url  , {
+      url
+    });
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const data = await response.text();
-    console.log(data);
-    return { status: true, data };
-  } catch (error) {
-    if (error instanceof Error) {
-      const data = `Fetch error: ${error.message}`;
-      return { status: false, data };
+    //console.log(response.data.data.tiny_url);
+    return { 
+      status: true, 
+      url : response.data.data.url ,
+      shortenUrl :  response.data.data.tiny_url
+    };
+  } 
+  catch (error) {
+    return { 
+      status : false , 
+      error , 
+      message : 'An error occured while shortening the link'
     }
   }
 }

@@ -3,12 +3,12 @@ import React from 'react'
 function Hero() {
     return (
         <section>
-            <div className="container">
+            <div className="container overflow-x-hidden lg:overflow-x-visible">
 
                 <div className="flex flex-col pt-6 pb-[88px]  gap-y-9 lg:flex-row lg:gap-x-[100px] lg:relative lg:pt-16 lg:pb-[138px] lg:mt-20 ">
 
                     <div className='w-fit  lg:absolute lg:w-[66%] lg:left-[57%] lg:top-0 ' >
-                        <img src="/public/images/illustration-working.svg" alt="" className={/* w-[152%] max-w-none  */`lg:w-auto`} />
+                        <img src="/public/images/illustration-working.svg" alt="" className={` w-[152%] max-w-none  lg:w-auto`} />
                     </div>
 
                     <div className='text-center lg:text-left lg:max-w-[564px]  '>

@@ -1,6 +1,6 @@
 import React from 'react'
-import FooterLinksList from './FooterLinksList'
-import FooterSocialMedia from './FooterSocialMedia'
+import FooterLinksList from './FooterSections/FooterLinksList'
+import FooterSocialMedia from './FooterSections/FooterSocialMedia'
 
 function Footer() {
     return (

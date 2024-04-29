@@ -35,8 +35,8 @@ function Header() {
                     </a>
                     <div className={classNames(`absolute left-6 right-6 top-24 z-50 bg-dark-violet rounded-[10px] px-6 py-10 origin-top-right transition-[colors_transform] duration-100 ease-in
                     lg:static lg:scale-100 lg:opacity-100 lg:flex-1 lg:flex lg:flex-   lg:bg-transparent lg:py-0 lg:px-0   ` , {
-                        'opacity-100 scale-100' : menuOpen , 
-                        'scale-0 opacity-0' : !menuOpen
+                        'scale-100' : menuOpen , 
+                        'scale-0' : !menuOpen
                     })}>
                         <ul className={`flex flex-col gap-y-[30px] font-black text-lg 
                         lg:flex-row lg:flex-1 lg:gap-x-8 lg:items-center lg:pl-11 `}>
